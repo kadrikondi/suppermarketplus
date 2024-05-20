@@ -19,7 +19,7 @@ export default function Approute() {
         <Route exact path="/signup">
           <Signup />
         </Route>
-        <Route exact path="/urserprofile/:id">
+        <Route exact path="/userprofile/:id">
           <Userprofile />
         </Route>
       </Switch>
