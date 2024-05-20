@@ -24,7 +24,16 @@ export default function Approute() {
         <Route exact path="/signup">
           <Signup />
         </Route>
-        <Route exact path="/urserprofile/:id">
+
+        <Route exact path="/Storedetail/id:">
+          <Storedetail />
+        </Route>
+
+        <Route exact path="/Createstore">
+          <Createstore />
+          </Route>
+
+         <Route exact path="/urserprofile/:id">
           <Userprofile />
         </Route>
       </Switch>
