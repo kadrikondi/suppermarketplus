@@ -3,8 +3,7 @@ import LandingPage from "./components/pages/LandingPage";
 import React from "react";
 import Signin from "./components/pages/Signin";
 import Signup from "./components/pages/Signup";
-import Storedetail from "./components/pages/Storedetail";
-import Createstore from "./components/pages/Createstore";
+import About from "./components/pages/About";
 import Userprofile from "./components/pages/Userprofile";
 
 export default function Approute() {
@@ -16,6 +15,10 @@ export default function Approute() {
         </Route>
         <Route exact path="/signin">
           <Signin />
+        </Route>
+
+        <Route exact path="/about">
+          <About />
         </Route>
 
         <Route exact path="/signup">
