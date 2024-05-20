@@ -15,5 +15,5 @@ function App() {
     </div>
   );
 }
-
+// home, about, contact, storedeatail, userprofile, createstore;
 export default App;
