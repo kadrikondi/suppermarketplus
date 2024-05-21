@@ -1,6 +1,6 @@
 import React from 'react'
 
- function Storedetail() {
+function Createstore() {
   return (
     <div>
       
@@ -8,6 +8,4 @@ import React from 'react'
   )
 }
 
-export default Storedetail;
-
-// Afeez
+export default Createstore;
