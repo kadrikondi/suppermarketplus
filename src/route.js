@@ -16,13 +16,10 @@ export default function route() {
         <Route exact path="/">
           <LandingPage />
         </Route>
-       
 
         <Route exact path="/about">
           <About />
         </Route>
-
-        
 
         <Route exact path="/signup">
           <Signup />
@@ -36,6 +33,10 @@ export default function route() {
 
         <Route exact path="/Storedetail">
           <Storedetail />
+        </Route>
+
+        <Route exact path="/signin">
+          <Signin />
         </Route>
 
         {/* <Route exact path="/Storedetail">
