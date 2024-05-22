@@ -4,7 +4,6 @@ function Createstore() {
   return (
     <div>
         Createstore
-      
     </div>
   )
 }
