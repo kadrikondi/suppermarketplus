@@ -36,6 +36,10 @@ export default function Approute() {
         <Route exact path="/Storedetail">
           <Storedetail />
         </Route>
+
+        {/* <Route exact path="/Storedetail">
+        <Storedetail />
+        </Route> */}
       </Switch>
     </>
   );
