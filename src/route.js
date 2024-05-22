@@ -3,9 +3,10 @@ import LandingPage from "./components/pages/LandingPage";
 import React from "react";
 import Signin from "./components/pages/Signin";
 import Signup from "./components/pages/Signup";
-import Contact from "./components/pages/contact";
+import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
 import Userprofile from "./components/pages/Userprofile";
+import Storedetail from "./components/pages/Storedetail";
 
 export default function Approute() {
   return (
@@ -30,6 +31,10 @@ export default function Approute() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+        </Route>
+
+        <Route exact path="/Storedetail">
+          <Storedetail />
         </Route>
       </Switch>
     </>
