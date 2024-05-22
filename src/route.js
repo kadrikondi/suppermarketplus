@@ -5,6 +5,9 @@ import Signin from "./components/pages/Signin";
 import Signup from "./components/pages/Signup";
 import About from "./components/pages/About";
 import Userprofile from "./components/pages/Userprofile";
+import Storedetail from "./components/pages/Storedetail";
+import Createstore from "./components/pages/Createstore";
+
 
 export default function Approute() {
   return (

@@ -3,7 +3,7 @@ import React from 'react'
  function Storedetail() {
   return (
     <div>
-      
+      fghjk
     </div>
   )
 }
