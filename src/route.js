@@ -7,7 +7,7 @@ import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
 import Userprofile from "./components/pages/Userprofile";
 
-export default function Approute() {
+export default function route() {
   return (
     <>
       <Switch>
@@ -28,7 +28,7 @@ export default function Approute() {
         <Route exact path="/userprofile/:id">
           <Userprofile />
         </Route>
-        <Route exact path="/contact">
+        <Route exact path="/Contact">
           <Contact />
         </Route>
       </Switch>
