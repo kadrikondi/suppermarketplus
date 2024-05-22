@@ -1,13 +1,11 @@
 import React from 'react'
 
-
-export default function () {
+function Createstore() {
   return (
     <div>
-      home
+      
     </div>
   )
 }
 
-
-// muhammed 
+export default Createstore;
