@@ -5,8 +5,6 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook } from '@fortawesome/free-solid-svg-icons'
 import { faGoogle } from '@fortawesome/free-solid-svg-icons'
 import Styled from './Style.css'
 import Signup from './Signup'
@@ -34,9 +32,15 @@ function Signin() {
          </div>
          <form action="#">
             <div class="field">
-               <input type="text" required></input>
+               <input type="email" required></input>
                <label>Email Address</label>
             </div>
+
+            <div class="field">
+               <input type="text" required></input>
+               <label>Username</label>
+            </div>
+
             <div class="field">
                <input type="password" required></input>
                <label>Password</label>

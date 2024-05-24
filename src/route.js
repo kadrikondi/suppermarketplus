@@ -36,6 +36,10 @@ export default function Approute() {
           <Storedetail />
         </Route>
 
+        <Route exact path="/Signin">
+          <Signin />
+        </Route>
+
         {/* <Route exact path="/Storedetail">
         <Storedetail />
         </Route> */}

@@ -73,16 +73,6 @@ const Contact = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div> Contact</div>
-  )
-};
-
-
-
-// // omogbolahan//
-
-=======
     <div>
       <div style={containerStyle}>
         <div style={formContainerStyle}>
@@ -122,4 +112,3 @@ const Contact = () => {
 }
 
 export default Contact;
->>>>>>> 4f100b53cc1472ced15b439724f436d8923b52ff
