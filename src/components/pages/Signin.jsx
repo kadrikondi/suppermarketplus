@@ -4,6 +4,14 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook } from '@fortawesome/free-solid-svg-icons'
+import { faGoogle } from '@fortawesome/free-solid-svg-icons'
+import Styled from './Style.css'
+import Signup from './Signup'
+import { Link } from 'react-router-dom';
+
 
 function Signin() {
   const [validated, setValidated] = useState(false);
@@ -19,54 +27,31 @@ function Signin() {
   };
 
   return (
-    <div style={{height: '250px', borderRadius: '50px', backgroundColor: '#ccc', width: '500px', margin: 'auto', color: 'black', alignItem: 'center'}}><br></br><div style={{fontSize: '30px', fontWeight: 'bolder', textAlign: 'center'}}><span style={{color: 'green'}}>L</ span><span style={{color: 'red'}}>O</ span><span style={{color: 'blue'}}>G</ span><span style={{color: 'yellow'}}>I</ span><span style={{color: 'black'}}>N</ span> </div>
- <Form>
-      <Form.Group style={{width: '500px', margin: 'auto'}} as={Row} className="mb-3" controlId="formPlaintextEmail">
-        <Form.Label column sm="2">
-          Email:
-        </Form.Label>
-        <Col sm="10">
-          <Form.Control type="email" placeholder="@" />
-        </Col>
-      </Form.Group>
-      
-      <Form.Group style={{width: '500px', margin: 'auto'}}as={Row} className="mb-3" controlId="formPlaintextPassword">
-        <Form.Label column sm="2">
-          Password:
-        </Form.Label>
-        <Col sm="10">
-          <Form.Control type="password" placeholder="Password" />
-        </Col><br /><br />
-       
-     
-
-
-      <Button style={{marginTop: '15px', marginLeft: '140px', color: 'White', borderRadius: '50px', backgroundColor: 'Skyblue', width: '230px'}} type="submit">Submit</Button>{' '}
-      </Form.Group>
-     
-
-    </Form>
-
-  
-   
-
-    </div>
+<><div style={{marginLeft: '500px', alignItems: 'center'}}>
+<div class="wrapper">
+         <div class="title">
+            Login Now
+         </div>
+         <form action="#">
+            <div class="field">
+               <input type="text" required></input>
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" required></input>
+               <label>Password</label>
+            </div>
+            
+            <div class="field">
+               <input type="submit" value="Login"></input>
+            </div>
+            <div class="signup-link">
+               Not a member? <Link to="/Signup"><a href="#">Signup now</a></Link>
+            </div>
+         </form>
+      </div></div>
+    </>
   );
-}
-
-export default Signin;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} 
+  
+    export default Signin ;

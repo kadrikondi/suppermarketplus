@@ -76,6 +76,13 @@ const Contact = () => {
   
 
   return (
+
+
+
+
+
+// // omogbolahan//
+
     <div>
       <div style={containerStyle}>
         <div style={formContainerStyle}>
@@ -127,5 +134,3 @@ export default Contact;
 
 
 
-
-/// omogbolahan ////

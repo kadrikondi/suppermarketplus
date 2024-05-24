@@ -6,10 +6,11 @@ import Signup from "./components/pages/Signup";
 import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
 import Userprofile from "./components/pages/Userprofile";
-import Storedetail from "./components/pages/Storedetail"
-import Createstore from "./components/pages/Createstore"
+import Storedetail from "./components/pages/Storedetail";
+import Createstore from "./components/pages/Createstore";
 
-export default function route() {
+
+export default function Approute() {
   return (
     <>
       <Switch>
@@ -33,10 +34,6 @@ export default function route() {
 
         <Route exact path="/Storedetail">
           <Storedetail />
-        </Route>
-
-        <Route exact path="/signin">
-          <Signin />
         </Route>
 
         {/* <Route exact path="/Storedetail">

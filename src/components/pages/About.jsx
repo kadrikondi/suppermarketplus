@@ -1,59 +1,6 @@
-import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import { useState } from 'react';
+import React from 'react'
 
-
-const About = () => {
-  const [isHoveredContainer, setIsHoveredContainer] = useState(false);
-  const [hoveredSection, setHoveredSection] = useState(null);
-
-  const containerStyle = {
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '20px',
-    transition: 'box-shadow 0.3s ease',
-    boxShadow: isHoveredContainer ? '0 8px 16px rgba(0, 0, 0, 0.2)' : '0 4px 8px rgba(0, 0, 0, 0.1)'
-  };
-
-  const headerStyle = {
-    textAlign: 'center',
-    marginBottom: '20px'
-  };
-
-  const sectionStyle = (isHovered) => ({
-    padding: '20px',
-    backgroundColor: isHovered ? '#e0f7fa' : '#f9f9f9',
-    borderRadius: '10px',
-    margin: '20px 0',
-    transition: 'background-color 0.3s ease, box-shadow 0.3s ease',
-    boxShadow: isHovered ? '0 8px 16px rgba(0, 0, 0, 0.2)' : 'none'
-  });
-
-  const teamMemberStyle = {
-    textAlign: 'center',
-    margin: '20px 0'
-  };
-
-  const imageStyle = {
-    width: '150px',
-    height: '150px',
-    borderRadius: '50%'
-  };
-
-  const footerStyle = {
-    backgroundColor: '#0077b6',
-    color: '#fff',
-    textAlign: 'center',
-    padding: '10px',
-    marginTop: '20px',
-    borderRadius: '0 0 10px 10px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100px'
-  };
-
+export default function About() {
   return (
     <div
       style={containerStyle}
@@ -114,7 +61,7 @@ const About = () => {
   );
 }
 
-export default About;
+
 
 
 

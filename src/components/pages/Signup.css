@@ -1,0 +1,80 @@
+.container{
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    margin-left: 350px;
+    padding: 10px;
+    box-shadow: 5px 6px 8px 0px black;
+    cursor: pointer;
+
+  }
+  .king{
+    margin-left: 10px;
+  }
+  .omo input[type="text"]{
+    padding: 10px;
+    border-radius: 3px;
+    width: 210px;
+  }
+  .gun .rob{
+    width: 428px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+  .gun .fan{
+    width: 428px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+  .aje select{
+    padding: 8px;
+    margin: 5px;
+    width: 137px;
+    margin-top: -10px;
+    border: 2px solid black;
+  }
+  .aje .dad{
+    margin-left: -1px;
+  }
+  .aje .toy{
+    width: 131px;
+  }
+  .bod{
+    border: 2px solid black;
+    padding: 8px;
+    margin-bottom: 10px;
+    display: inline;
+    margin: 5px;
+    border-radius: 3px;
+    
+   
+  }
+  .bod [type="radio"]{
+    margin-right: 5px;
+    width: 62px;
+  }
+  .bod .ten{
+    margin-left: -1px
+  }
+  .ink{
+    font-size: 15px;
+  }
+ .perf {
+    text-align: center;
+ }
+ button{
+    padding: 5px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+
+ }
+ button:hover{
+    background-color: #023047;
+    color: white;
+    
+    
+ }
