@@ -6,9 +6,10 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import ReactDOM from "react-dom";
 import { faGoogle } from "@fortawesome/free-solid-svg-icons";
-import Styled from "./Style.css";
+import Styled from "./Signin.css";
 import Signup from "./Signup";
 import { Link } from "react-router-dom";
+import Logo from '../../assets/images/logoblacknobg.png'
 
 function Signin() {
   const [validated, setValidated] = useState(false);
@@ -25,19 +26,19 @@ function Signin() {
 
   return (
     <>
-      <div style={{ marginLeft: "500px", alignItems: "center" }}>
+      <div style={{ marginLeft: "500px", alignItems: "center" }} className="mt-5">
         <div class="wrapper">
-          <div class="title">Login Now</div>
+          <div class="title card-header py-2"> <img src={Logo} alt="" style={{width:'160px'}}/>
+          
+          
+          <h5 className="card-title">Sign-in</h5></div>
+
           <form action="#">
             <div class="field">
               <input type="email" required></input>
               <label>Email Address</label>
             </div>
 
-            <div class="field">
-              <input type="text" required></input>
-              <label>Username</label>
-            </div>
 
             <div class="field">
               <input type="password" required></input>
