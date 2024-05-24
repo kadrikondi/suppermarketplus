@@ -1,17 +1,14 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
-import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook } from '@fortawesome/free-solid-svg-icons'
-import { faGoogle } from '@fortawesome/free-solid-svg-icons'
-import Styled from './Style.css'
-import Signup from './Signup'
-import { Link } from 'react-router-dom';
-
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+import Row from "react-bootstrap/Row";
+import ReactDOM from "react-dom";
+import { faGoogle } from "@fortawesome/free-solid-svg-icons";
+import Styled from "./Style.css";
+import Signup from "./Signup";
+import { Link } from "react-router-dom";
 
 function Signin() {
   const [validated, setValidated] = useState(false);
@@ -27,31 +24,40 @@ function Signin() {
   };
 
   return (
-<><div style={{marginLeft: '500px', alignItems: 'center'}}>
-<div class="wrapper">
-         <div class="title">
-            Login Now
-         </div>
-         <form action="#">
+    <>
+      <div style={{ marginLeft: "500px", alignItems: "center" }}>
+        <div class="wrapper">
+          <div class="title">Login Now</div>
+          <form action="#">
             <div class="field">
-               <input type="text" required></input>
-               <label>Email Address</label>
+              <input type="email" required></input>
+              <label>Email Address</label>
             </div>
+
             <div class="field">
-               <input type="password" required></input>
-               <label>Password</label>
+              <input type="text" required></input>
+              <label>Username</label>
             </div>
-            
+
             <div class="field">
-               <input type="submit" value="Login"></input>
+              <input type="password" required></input>
+              <label>Password</label>
+            </div>
+
+            <div class="field">
+              <input type="submit" value="Login"></input>
             </div>
             <div class="signup-link">
-               Not a member? <Link to="/Signup"><a href="#">Signup now</a></Link>
+              Not a member?{" "}
+              <Link to="/Signup">
+                <a href="#">Signup now</a>
+              </Link>
             </div>
-         </form>
-      </div></div>
+          </form>
+        </div>
+      </div>
     </>
   );
-} 
-  
-    export default Signin ;
+}
+
+export default Signin;
