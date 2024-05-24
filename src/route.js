@@ -8,21 +8,23 @@ import About from "./components/pages/About";
 import Userprofile from "./components/pages/Userprofile";
 import Storedetail from "./components/pages/Storedetail"
 // import Createstore from "./components/pages/Createstore"
+import Home from "./components/pages/Home";
 
 export default function route() {
   return (
     <>
       <Switch>
+      <Route exact path="/Home">
+          <Home />
+        </Route>
+
         <Route exact path="/">
           <LandingPage />
         </Route>
-       
 
         <Route exact path="/about">
           <About />
         </Route>
-
-        
 
         <Route exact path="/signup">
           <Signup />
@@ -36,6 +38,10 @@ export default function route() {
 
         <Route exact path="/Storedetail">
           <Storedetail />
+        </Route>
+
+        <Route exact path="/signin">
+          <Signin />
         </Route>
 
         {/* <Route exact path="/Storedetail">

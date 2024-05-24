@@ -1,4 +1,5 @@
 import React from 'react'
+import './Signup.css'
 
 export default function Signup() {
   return (
@@ -75,7 +76,7 @@ export default function Signup() {
       <input type="radio" name="radio" id="cusom" />
       </div>
      </form>
-     <p>by clicking Sign up, you are agree to our Terms.learn how we collect, use and share your data in our <strong>Data policy</strong> and how we use cookies and similar technology in our <strong>cookies policy</strong>.you may receive  SMS Notification from us and can opt out any time </p>
+     <p style={{marginTop:'8px'}}>by clicking Sign up, you are agree to our Terms.learn how we collect, use and share your data in our <strong>Data policy</strong> and how we use cookies and similar technology in our <strong>cookies policy</strong>.you may receive  SMS Notification from us and can opt out any time </p>
        <div className='perf'>
        <button>Sign Up</button>
        </div>
