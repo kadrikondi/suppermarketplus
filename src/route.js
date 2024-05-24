@@ -14,6 +14,10 @@ export default function Approute() {
   return (
     <>
       <Switch>
+      <Route exact path="/Home">
+          <Home />
+        </Route>
+
         <Route exact path="/">
           <LandingPage />
         </Route>

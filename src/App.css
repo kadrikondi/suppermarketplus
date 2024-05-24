@@ -1,0 +1,12 @@
+.navbar-center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* In your App.css or another CSS file */
+.custom-search-input {
+    width: 500px; /* Adjust the width as needed */
+  }
+  
