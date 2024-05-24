@@ -1,13 +1,13 @@
 import { Switch, Route } from "react-router-dom";
-import LandingPage from "./components/pages/LandingPage";
+import LandingPage from "./components/Page/LandingPage";
 import React from "react";
-import Signin from "./components/pages/Signin";
-import Signup from "./components/pages/Signup";
-import Contact from "./components/pages/Contact";
-import About from "./components/pages/About";
-import Userprofile from "./components/pages/Userprofile";
-import Storedetail from "./components/pages/Storedetail";
-import Createstore from "./components/pages/Createstore";
+import Signin from "./components/Page/Signin";
+import Signup from "./components/Page/Signup";
+import Contact from "./components/Page/Contact";
+import About from "./components/Page/About";
+import Userprofile from "./components/Page/Userprofile";
+import Storedetail from "./components/Page/Storedetail";
+import Createstore from "./components/Page/Createstore";
 
 
 export default function Approute() {
