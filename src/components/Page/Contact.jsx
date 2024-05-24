@@ -1,91 +1,80 @@
-import React from 'react';
-import { Stack } from 'react-bootstrap'; // Ensure you have react-bootstrap installed
+import React from "react";
+import { Stack } from "react-bootstrap"; // Ensure you have react-bootstrap installed
 
 const Contact = () => {
   const containerStyle = {
-    display: 'flex',
-    borderRadius: '10px', 
-    padding: '10px', 
-    maxWidth: '1000px', 
-    margin: '20px auto',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    backgroundColor: '#e5e5e5' 
+    display: "flex",
+    borderRadius: "10px",
+    padding: "10px",
+    maxWidth: "1000px",
+    margin: "20px auto",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    backgroundColor: "#e5e5e5",
   };
 
   const formContainerStyle = {
     flex: 2,
-    paddingRight: '10px,'
-  
+    paddingRight: "10px,",
   };
 
   const sidebarStyle = {
     flex: 1,
-    borderLeft: '2px solid #ddd',
-    paddingLeft: '120px', 
-    paddingTop: '140px', 
-    color: '#555'
+    borderLeft: "2px solid #ddd",
+    paddingLeft: "120px",
+    paddingTop: "140px",
+    color: "#555",
   };
 
   const headingStyle = {
-    textAlign: 'center',
-    color: '#333',
-    margin: '10px 0' 
+    textAlign: "center",
+    color: "#333",
+    margin: "10px 0",
   };
 
   const subHeadingStyle = {
-    textAlign: 'center',
-    color: '#666',
-    marginBottom: '10px' 
+    textAlign: "center",
+    color: "#666",
+    marginBottom: "10px",
   };
 
   const itemStyle = {
-    padding: '5px 0', // Adjusted padding for better layout
+    padding: "5px 0", // Adjusted padding for better layout
   };
 
   const inputStyle = {
-    width: '100%',
-    padding: '8px', // Reduced padding
-    margin: '5px 0',
-    border: '1px solid #ddd',
-    borderRadius: '5px',
-    backgroundColor: '#fff'
+    width: "100%",
+    padding: "8px", // Reduced padding
+    margin: "5px 0",
+    border: "1px solid #ddd",
+    borderRadius: "5px",
+    backgroundColor: "#fff",
   };
 
   const buttonStyle = {
-    width: '50%',
-    padding: '10px', // Reduced padding
-    margin: '10px 0 0 110px', // Reduced margin top
-    border: 'none',
-    borderRadius: '5px',
-    backgroundColor: '#0077b6', // Green background color
-    color: '#fff',
-    fontSize: '16px',
+    width: "50%",
+    padding: "10px", // Reduced padding
+    margin: "10px 0 0 110px", // Reduced margin top
+    border: "none",
+    borderRadius: "5px",
+    backgroundColor: "#0077b6", // Green background color
+    color: "#fff",
+    fontSize: "16px",
     // cursor: 'pointer',
-    boxShadow: '0 4px 8px rgb(0, 0, 0, 0.2)', // Adding a more pronounced shadow for the button
+    boxShadow: "0 4px 8px rgb(0, 0, 0, 0.2)", // Adding a more pronounced shadow for the button
   };
 
   const footerStyle = {
-    backgroundColor: '#0077b6',
-    color: '#fff',
-    textAlign: 'center',
-    padding: '10px 0, 0, 40px',
-    marginTop: '20px',
-    borderRadius: '0 0 10px 10px'
+    backgroundColor: "#0077b6",
+    color: "#fff",
+    textAlign: "center",
+    padding: "10px 0, 0, 40px",
+    marginTop: "20px",
+    borderRadius: "0 0 10px 10px",
   };
 
-  
-
   return (
-<<<<<<< HEAD:src/components/pages/Contact.jsx
-=======
+    // // omogbolahan//
 
-
-
-
-
-// // omogbolahan//
-
->>>>>>> 4c2597d3ff17615d1a1ac5747e1f79a0666ca0e5:src/components/Page/Contact.jsx
     <div>
       <div style={containerStyle}>
         <div style={formContainerStyle}>
@@ -99,22 +88,44 @@ const Contact = () => {
               <input style={inputStyle} type="email" placeholder="Email" />
             </div>
             <div style={itemStyle}>
-              <input style={inputStyle} type="email" placeholder="Confirm Email" />
+              <input
+                style={inputStyle}
+                type="email"
+                placeholder="Confirm Email"
+              />
             </div>
             <div style={itemStyle}>
               <input style={inputStyle} type="tel" placeholder="Phone" />
             </div>
             <div style={itemStyle}>
-              <button style={buttonStyle} type="submit">Submit</button>
+              <button style={buttonStyle} type="submit">
+                Submit
+              </button>
             </div>
           </Stack>
         </div>
         <div style={sidebarStyle}>
-          <h4 style={{ margin: '10px 0' }}>Supermarket Plus</h4>
-          <p style={{ margin: '5px 0' }}>Lagos island Street<br />Airport Residential<br />NIGERIA</p>
-          <p style={{ margin: '5px 0' }}>+234 (0)20 4677 033<br />+234 (0)30 278 6726</p>
-          <p style={{ margin: '5px 0' }}><a href="#">info@supermarketplus.com</a></p>
-          <p style={{ margin: '5px 0' }}><a href="#" target="_blank" rel="noopener noreferrer">www..info@supermarketplus.com</a></p>
+          <h4 style={{ margin: "10px 0" }}>Supermarket Plus</h4>
+          <p style={{ margin: "5px 0" }}>
+            Lagos island Street
+            <br />
+            Airport Residential
+            <br />
+            NIGERIA
+          </p>
+          <p style={{ margin: "5px 0" }}>
+            +234 (0)20 4677 033
+            <br />
+            +234 (0)30 278 6726
+          </p>
+          <p style={{ margin: "5px 0" }}>
+            <a href="#">info@supermarketplus.com</a>
+          </p>
+          <p style={{ margin: "5px 0" }}>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              www..info@supermarketplus.com
+            </a>
+          </p>
         </div>
       </div>
       <div></div>
@@ -122,21 +133,30 @@ const Contact = () => {
         <p>&copy; 2024 Supermarket Plus. All rights reserved.</p>
         <p>Follow us on:</p>
         <p>
-          <a href="#" style={{ color: '#fff', textDecoration: 'none', margin: '0 5px' }}>Facebook</a> | 
-          <a href="#" style={{ color: '#fff', textDecoration: 'none', margin: '0 5px' }}>Twitter</a> | 
-          <a href="#" style={{ color: '#fff', textDecoration: 'none', margin: '0 5px' }}>Instagram</a>
+          <a
+            href="#"
+            style={{ color: "#fff", textDecoration: "none", margin: "0 5px" }}
+          >
+            Facebook
+          </a>{" "}
+          |
+          <a
+            href="#"
+            style={{ color: "#fff", textDecoration: "none", margin: "0 5px" }}
+          >
+            Twitter
+          </a>{" "}
+          |
+          <a
+            href="#"
+            style={{ color: "#fff", textDecoration: "none", margin: "0 5px" }}
+          >
+            Instagram
+          </a>
         </p>
       </footer>
-      </div>
-    
+    </div>
   );
-}
+};
 
 export default Contact;
-<<<<<<< HEAD:src/components/pages/Contact.jsx
-=======
-
-
-
-
->>>>>>> 4c2597d3ff17615d1a1ac5747e1f79a0666ca0e5:src/components/Page/Contact.jsx
