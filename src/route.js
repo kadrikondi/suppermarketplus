@@ -6,8 +6,10 @@ import Signup from "./components/pages/Signup";
 import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
 import Userprofile from "./components/pages/Userprofile";
-import Createstore from "./components/pages/Createstore"
 import Storedetail from "./components/pages/Storedetail";
+import Createstore from "./components/pages/Createstore";
+
+
 export default function Approute() {
   return (
     <>
@@ -15,13 +17,10 @@ export default function Approute() {
         <Route exact path="/">
           <LandingPage />
         </Route>
-       
 
         <Route exact path="/about">
           <About />
         </Route>
-
-        
 
         <Route exact path="/signup">
           <Signup />
@@ -29,7 +28,7 @@ export default function Approute() {
         <Route exact path="/userprofile/:id">
           <Userprofile />
         </Route>
-        <Route exact path="/contact">
+        <Route exact path="/Contact">
           <Contact />
         </Route>
 
@@ -37,8 +36,6 @@ export default function Approute() {
           <Storedetail />
         </Route>
 
-
-      
         {/* <Route exact path="/Storedetail">
         <Storedetail />
         </Route> */}
