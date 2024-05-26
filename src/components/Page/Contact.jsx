@@ -35,7 +35,7 @@ const Contact = () => {
   const subHeadingStyle = {
     textAlign: 'center',
     color: '#666',
-    marginBottom: '10px' 
+    marginBottom: '10px'  
   };
 
   const itemStyle = {

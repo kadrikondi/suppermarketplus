@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const About = () => {
   const [isHoveredContainer, setIsHoveredContainer] = useState(false);
-  const [isHoveredSection, setIsHoveredSection] = useState(false);
+  const [HoveredSection, setHoveredSection] = useState(null);
 
   const containerStyle = {
     maxWidth: '1200px',
@@ -112,18 +112,30 @@ const About = () => {
         <Row>
           <Col md={4} style={teamMemberStyle}>
             <Image src="team-member1.jpg" style={imageStyle} />
-            <h4>John Doe</h4>
+            <h4>Mr kondi</h4>
             <p>Founder & CEO</p>
           </Col>
           <Col md={4} style={teamMemberStyle}>
             <Image src="team-member2.jpg" style={imageStyle} />
-            <h4>Jane Smith</h4>
+            <h4>BABATUNDE</h4>
             <p>COO</p>
           </Col>
           <Col md={4} style={teamMemberStyle}>
             <Image src="team-member3.jpg" style={imageStyle} />
-            <h4>Mike Johnson</h4>
+            <h4>AFEEZ</h4>
             <p>Head of Marketing</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4} style={teamMemberStyle}>
+            <Image src="team-member2.jpg" style={imageStyle} />
+            <h4>MUHHAMMED</h4>
+            <p>COO</p>
+          </Col>
+          <Col md={4} style={teamMemberStyle}>
+            <Image src="team-member3.jpg" style={imageStyle} />
+            <h4>WARIS</h4>
+            <p>ASSITANT</p>
           </Col>
         </Row>
       </section>
