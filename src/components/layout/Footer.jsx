@@ -5,9 +5,9 @@ import './Footer.css'
 
 export default function Footer() {
   return (
-   <footer>
-     <div className='containers'>
-      <div className='row'>
+   <footer className='mt-5'>
+     <div className='containers mt-5'>
+      <div className='row mt-5'>
         <div className='col'>
         <h2 style={{fontSize:'30px'}}>Supermarketplus</h2>
           <p>About us</p>
