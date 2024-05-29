@@ -46,7 +46,7 @@ function SignUp() {
             </div>
 
             <div class="mt-5">
-              <input type="checkbox" required /> By clicking, you agree to Suppermartplus <Link to='/term'> Terms</Link> & <Link to='/policy'>Privacy Policy⁠</Link>
+              <input type="checkbox" required /> By clicking, you agree to Suppermartplus <Link to='/Terms'> Terms</Link> & <Link to='/Privacypolicy'>Privacy Policy⁠</Link>
               
             </div>
 

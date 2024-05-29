@@ -9,6 +9,8 @@ import Userprofile from "./components/Page/Userprofile";
 import Storedetail from "./components/Page/Storedetail";
 import Createstore from "./components/Page/Createstore";
 import Home from "./components/Page/Home";
+import Terms from "./components/Page/Terms";
+import Privacypolicy from "./components/Page/Privacypolicy"
 
 export default function Approute() {
   return (
@@ -47,7 +49,17 @@ export default function Approute() {
         <Route exact path="/createstore">
           <Createstore />
         </Route>
+
+      <Route exact path="/Terms">
+          <Terms />
+        </Route>
+
+       
+        <Route exact path="/Privacypolicy">
+          <Privacypolicy />
+        </Route>
       </Switch>
+
     </>
   );
-}
+};
