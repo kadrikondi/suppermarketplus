@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faTiktok,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import snap from '../../assets/images/logoblacknobg1.png'
 import './Footer.css'
 
 export default function Footer() {
@@ -9,11 +10,14 @@ export default function Footer() {
      <div className='containers mt-5'>
       <div className='row mt-5'>
         <div className='col'>
-        <h2 style={{fontSize:'30px'}}>Supermarketplus</h2>
-          <p>About us</p>
+          <img src={snap}  style={{width:'200px', height:'60px',marginTop:'-10px',marginLeft:'-9px'}} alt="super" />
+          <p>Weekly Ads</p>
           <p>Privacy policy</p>
           <p>Our services</p>
           <p>More info</p>
+          <p>FAQs</p>
+          <p>Tracks order</p>
+          <input type="email" placeholder='Enter your email here' />
         </div>
         <div className='col'>
           <h2>About us</h2>

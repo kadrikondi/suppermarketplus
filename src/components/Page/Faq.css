@@ -1,0 +1,13 @@
+/* @keyframes colorChange {
+    0% { color: rgb(223, 70, 70); }
+    33% { color: rgb(131, 105, 174); }
+    66% { color: green; }
+    100% { color: rgb(0, 162, 255); }
+  } */
+  
+  .animated-span {
+    animation: colorChange 5s infinite;
+    animation-delay: inherit;
+    -webkit-box-reflect: right;
+  }
+  
