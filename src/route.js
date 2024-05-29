@@ -9,6 +9,7 @@ import Userprofile from "./components/Page/Userprofile";
 import Storedetail from "./components/Page/Storedetail";
 import Createstore from "./components/Page/Createstore";
 import Home from "./components/Page/Home";
+import Faq from "./components/Page/Faq";
 
 export default function Approute() {
   return (
@@ -46,6 +47,11 @@ export default function Approute() {
 
         <Route exact path="/createstore">
           <Createstore />
+        </Route>
+
+        
+        <Route exact path="/faq">
+          <Faq />
         </Route>
       </Switch>
     </>
