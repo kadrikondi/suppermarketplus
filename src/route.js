@@ -17,6 +17,9 @@ import Security from "./components/Page/Security";
 import LandingPage from './components/layout/Landingpage'
 // import FAQ from "./components/Page/FAQ";
 
+import Terms from "./components/Page/Terms";
+import Privacypolicy from "./components/Page/Privacypolicy";
+import Faq from "./components/Page/Faq";
 
 export default function Approute() {
   return (
@@ -92,7 +95,20 @@ export default function Approute() {
           <LandingPage />
         </Route>
 
+      <Route exact path="/Terms">
+          <Terms />
+        </Route>
+
+       
+        <Route exact path="/Privacypolicy">
+          <Privacypolicy />
+          </Route>
+
+        <Route exact path="/faq">
+          <Faq />
+        </Route>
       </Switch>
+
     </>
   );
-}
+};

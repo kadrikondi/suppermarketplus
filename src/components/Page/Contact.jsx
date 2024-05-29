@@ -32,9 +32,9 @@ const Contact = () => {
   };
 
   const subHeadingStyle = {
-    textAlign: "center",
-    color: "#666",
-    marginBottom: "10px",
+    textAlign: 'center',
+    color: '#666',
+    marginBottom: '10px'  
   };
 
   const itemStyle = {
@@ -105,7 +105,7 @@ const Contact = () => {
           </Stack>
         </div>
         <div style={sidebarStyle}>
-          <h4 style={{ margin: "10px 0" }}>Supermarket Plus</h4>
+          <h4 style={{ margin: "10px 0" }}>Suppermarket Plus</h4>
           <p style={{ margin: "5px 0" }}>
             Lagos island Street
             <br />
@@ -119,44 +119,21 @@ const Contact = () => {
             +234 (0)30 278 6726
           </p>
           <p style={{ margin: "5px 0" }}>
-            <a href="#">info@supermarketplus.com</a>
+            <a href="#">info@suppermarketplus.com</a>
           </p>
           <p style={{ margin: "5px 0" }}>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              www..info@supermarketplus.com
+              www..info@suppermarketplus.com
             </a>
           </p>
         </div>
       </div>
       <div></div>
-      <footer style={footerStyle}>
-        <p>&copy; 2024 Supermarket Plus. All rights reserved.</p>
-        <p>Follow us on:</p>
-        <p>
-          <a
-            href="#"
-            style={{ color: "#fff", textDecoration: "none", margin: "0 5px" }}
-          >
-            Facebook
-          </a>{" "}
-          |
-          <a
-            href="#"
-            style={{ color: "#fff", textDecoration: "none", margin: "0 5px" }}
-          >
-            Twitter
-          </a>{" "}
-          |
-          <a
-            href="#"
-            style={{ color: "#fff", textDecoration: "none", margin: "0 5px" }}
-          >
-            Instagram
-          </a>
-        </p>
-      </footer>
     </div>
   );
 };
 
 export default Contact;
+
+
+//omogbolahan//
