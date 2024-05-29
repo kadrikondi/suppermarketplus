@@ -1,5 +1,4 @@
 import { Switch, Route } from "react-router-dom";
-// import LandingPage from "./components/Page/LandingPage";
 import React from "react";
 import Signin from "./components/Page/Signin";
 import Signup from "./components/Page/Signup";
@@ -9,12 +8,12 @@ import About from "./components/Page/About";
 import Storedetail from "./components/Page/Storedetail";
 import Createstore from "./components/Page/Createstore";
 import Home from "./components/Page/Home";
-import Homepageheader from "./components/layout/Homepageheader";
-import UserProfil from "./UserProfil";
-import Profile from "./components/Page/Profile"
-import Settings from "./components/Page/Settings"
+import Homepageheader from "./components/layout/Userpageheader";
+
+import Profile from "./components/Page/Profile";
+import Settings from "./components/Page/Settings";
 import Security from "./components/Page/Security";
-import LandingPage from './components/layout/Landingpage'
+import LandingPage from "./components/layout/Landingpage";
 // import FAQ from "./components/Page/FAQ";
 
 import Terms from "./components/Page/Terms";
@@ -25,15 +24,14 @@ export default function Approute() {
   return (
     <>
       <Switch>
-        <Route exact path="/Home">
+        <Route exact path="/">
+          <LandingPage />
+        </Route>
+        <Route exact path="/home">
           <Home />
         </Route>
 
-        {/* <Route exact path="/">
-          <LandingPage />
-        </Route> */}
-         
-         <Route exact path="/Security">
+        <Route exact path="/security">
           <Security />
         </Route>
 
@@ -41,22 +39,12 @@ export default function Approute() {
           <FAQ />
         </Route> */}
 
-        
-         
-
-         <Route exact path="/Profile">
+        <Route exact path="/profile">
           <Profile />
         </Route>
 
-        <Route exact path="/Settings">
+        <Route exact path="/settings">
           <Settings />
-        </Route>
-
-        
-
-
-        <Route exact path="/UserProfil">
-          <UserProfil />
         </Route>
 
         <Route exact path="/about">
@@ -87,28 +75,22 @@ export default function Approute() {
           <Createstore />
         </Route>
 
-        <Route exact path="/Homepageheader">
+        <Route exact path="/homepageheader">
           <Homepageheader />
         </Route>
-        
-        <Route exact path="/LandingPage">
-          <LandingPage />
-        </Route>
 
-      <Route exact path="/Terms">
+        <Route exact path="/terms">
           <Terms />
         </Route>
 
-       
-        <Route exact path="/Privacypolicy">
+        <Route exact path="/privacypolicy">
           <Privacypolicy />
-          </Route>
+        </Route>
 
         <Route exact path="/faq">
           <Faq />
         </Route>
       </Switch>
-
     </>
   );
-};
+}

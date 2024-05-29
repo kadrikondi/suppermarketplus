@@ -1,81 +1,70 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Container, Row, Col, Navbar, Nav, Card, Carousel } from 'react-bootstrap';
-import '../../App.css'; // Import your CSS file
-import Logo from '../../assets/images/suppermarketpluslogosmall.png';
-import Slide1 from '../../assets/images/Homeslider3.jpg'; // Replace with your carousel images
-import Slide2 from '../../assets/images/Homeslider7.jpg'; // Replace with your carousel images
-import Slide3 from '../../components/Storedetail/Homeslide6.jpg'; // Replace with your carousel images
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Button,
+  Container,
+  Row,
+  Col,
+  Navbar,
+  Nav,
+  Card,
+  Carousel,
+} from "react-bootstrap";
+import "../../App.css"; // Import your CSS file
+import Logo from "../../assets/images/suppermarketpluslogosmall.png";
+import Slide1 from "../../assets/images/Homeslider3.jpg"; // Replace with your carousel images
+import Slide2 from "../../assets/images/Homeslider7.jpg"; // Replace with your carousel images
+import Slide3 from "../../components/Storedetail/Homeslide6.jpg"; // Replace with your carousel images
 
 function LandingPage() {
   const logoStyle = {
-    width: '150px',
+    width: "150px",
   };
 
   const heroStyle = {
-    height: '80vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    background: 'linear-gradient(to right, #6a11cb, #2575fc)', // Nicer background
-    color: 'white',
+    height: "80vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    background: "linear-gradient(to right, #6a11cb, #2575fc)", // Nicer background
+    color: "white",
   };
 
   const sectionStyle = {
-    background: '#f8f9fa',
-    padding: '50px 0',
+    background: "#f8f9fa",
+    padding: "50px 0",
   };
 
   const cardStyle = {
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    transition: 'transform 0.3s',
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    transition: "transform 0.3s",
   };
 
   const cardHoverStyle = {
-    transform: 'scale(1.05)',
+    transform: "scale(1.05)",
   };
 
   const carouselItemStyle = {
-    height: '80vh',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    height: "80vh",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
 
   const footerStyle = {
-    background: '#343a40',
-    color: 'white',
-    padding: '20px 0',
+    background: "#343a40",
+    color: "white",
+    padding: "20px 0",
   };
 
   const socialIconStyle = {
-    color: 'white',
-    margin: '0 10px',
-    transition: 'color 0.3s',
+    color: "white",
+    margin: "0 10px",
+    transition: "color 0.3s",
   };
 
   return (
     <div>
-      {/* Header */}
-      <Navbar expand="lg" className="bg-light">
-        <Container>
-          <Navbar.Brand as={Link} to="/">
-            <img src={Logo} alt="Logo" style={logoStyle} />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/about">About</Nav.Link>
-              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-            </Nav>
-            <Button variant="outline-primary" as={Link} to="/signup">Sign Up</Button>
-            <br />
-            <Button variant="success" as={Link} to="/signup">Sign in</Button>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
       {/* Hero Section with Carousel */}
       <div style={heroStyle}>
         <Container fluid>
@@ -83,33 +72,26 @@ function LandingPage() {
             <Carousel.Item style={carouselItemStyle}>
               <img className="d-block w-100" src={Slide1} alt="First slide" />
               <Carousel.Caption>
-              <marquee direction="right" style={{ color: 'white' }}>
-        <h3 style={{ color: 'white' }}>Supermarketplus</h3>
-             </marquee>
-             <marquee direction="left" style={{ color: 'white' }}>
-        <p style={{ color: 'white' }}>Find everything you need.</p>
-            </marquee>
+                <marquee direction="right" style={{ color: "white" }}>
+                  <h3 style={{ color: "white" }}>Supermarketplus</h3>
+                </marquee>
+                <marquee direction="left" style={{ color: "white" }}>
+                  <p style={{ color: "white" }}>Find everything you need.</p>
+                </marquee>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item style={carouselItemStyle}>
               <img className="d-block w-100" src={Slide2} alt="Second slide" />
               <Carousel.Caption>
-             
-              
-    <h3 style={{ color: 'white' }}>Supermarketplus</h3>
-    <p style={{ color: 'white' }}>Find everything you need.</p>
-  
-        
+                <h3 style={{ color: "white" }}>Supermarketplus</h3>
+                <p style={{ color: "white" }}>Find everything you need.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item style={carouselItemStyle}>
               <img className="d-block w-100" src={Slide3} alt="Third slide" />
               <Carousel.Caption>
-               
-    <h3 style={{ color: 'white' }}>Supermarketplus</h3>
-    <p style={{ color: 'white' }}>Find everything you need.</p>
-
-      
+                <h3 style={{ color: "white" }}>Supermarketplus</h3>
+                <p style={{ color: "white" }}>Find everything you need.</p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -124,9 +106,7 @@ function LandingPage() {
               <Card style={cardStyle} className="card-hover">
                 <Card.Body>
                   <Card.Title>Feature One</Card.Title>
-                  <Card.Text>
-                    Brief description of the first feature.
-                  </Card.Text>
+                  <Card.Text>Brief description of the first feature.</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -144,9 +124,7 @@ function LandingPage() {
               <Card style={cardStyle} className="card-hover">
                 <Card.Body>
                   <Card.Title>Feature Three</Card.Title>
-                  <Card.Text>
-                    Brief description of the third feature.
-                  </Card.Text>
+                  <Card.Text>Brief description of the third feature.</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -203,7 +181,9 @@ function LandingPage() {
           <Row>
             <Col>
               <h2>Ready to Get Started?</h2>
-              <Button variant="primary" size="lg" as={Link} to="/signup">Join Now</Button>
+              <Button variant="primary" size="lg" as={Link} to="/signup">
+                Join Now
+              </Button>
             </Col>
           </Row>
         </Container>

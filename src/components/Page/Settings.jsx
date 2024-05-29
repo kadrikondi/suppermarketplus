@@ -1,33 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Container, Row, Col, Card, Form, Navbar, Nav } from 'react-bootstrap';
-import '../../App.css'; // Import your CSS file
-import Logo from '../../assets/images/suppermarketpluslogosmall.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Button,
+  Container,
+  Row,
+  Col,
+  Card,
+  Form,
+  Navbar,
+  Nav,
+} from "react-bootstrap";
+import "../../App.css"; // Import your CSS file
+import Logo from "../../assets/images/suppermarketpluslogosmall.png";
 
 function Settings() {
   const logoStyle = {
-    width: '150px',
+    width: "150px",
   };
 
   return (
     <div>
-      {/* Header */}
-      <Navbar expand="lg" className="bg-light">
-        <Container>
-          <Navbar.Brand as={Link} to="/">
-            <img src={Logo} alt="Logo" style={logoStyle} />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/about">About</Nav.Link>
-              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
       {/* Settings Sections */}
       <Container className="mt-5">
         <Card>
@@ -54,7 +46,10 @@ function Settings() {
                 <Col md={6}>
                   <Form.Group controlId="profilePhone">
                     <Form.Label>Phone</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your phone number" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your phone number"
+                    />
                   </Form.Group>
                 </Col>
               </Row>
@@ -65,14 +60,27 @@ function Settings() {
                 <Col md={6}>
                   <Form.Group controlId="accountUsername">
                     <Form.Label>Username</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your username" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your username"
+                    />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
                   <Form.Group controlId="accountPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Enter your password" />
-                    <Button variant="link" as={Link} to="/change-password" className="mt-2">Change Password</Button>
+                    <Form.Control
+                      type="password"
+                      placeholder="Enter your password"
+                    />
+                    <Button
+                      variant="link"
+                      as={Link}
+                      to="/change-password"
+                      className="mt-2"
+                    >
+                      Change Password
+                    </Button>
                   </Form.Group>
                 </Col>
               </Row>
@@ -80,13 +88,19 @@ function Settings() {
                 <Col md={6}>
                   <Form.Group controlId="securityQuestion1">
                     <Form.Label>Security Question 1</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your security question" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your security question"
+                    />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
                   <Form.Group controlId="securityQuestion2">
                     <Form.Label>Security Question 2</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your security question" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your security question"
+                    />
                   </Form.Group>
                 </Col>
               </Row>
@@ -102,30 +116,27 @@ function Settings() {
                 </Form.Control>
               </Form.Group>
               <Form.Group controlId="privacyDataSharing" className="mt-3">
-                <Form.Check 
-                  type="checkbox" 
-                  label="Allow data sharing with third parties" 
+                <Form.Check
+                  type="checkbox"
+                  label="Allow data sharing with third parties"
                 />
               </Form.Group>
 
               {/* Notification Settings */}
               <h5 className="mt-4">Notification Settings</h5>
               <Form.Group controlId="notificationsEmail" className="mt-3">
-                <Form.Check 
-                  type="checkbox" 
-                  label="Receive email notifications" 
+                <Form.Check
+                  type="checkbox"
+                  label="Receive email notifications"
                 />
               </Form.Group>
               <Form.Group controlId="notificationsSMS" className="mt-3">
-                <Form.Check 
-                  type="checkbox" 
-                  label="Receive SMS notifications" 
-                />
+                <Form.Check type="checkbox" label="Receive SMS notifications" />
               </Form.Group>
               <Form.Group controlId="notificationsPush" className="mt-3">
-                <Form.Check 
-                  type="checkbox" 
-                  label="Receive push notifications" 
+                <Form.Check
+                  type="checkbox"
+                  label="Receive push notifications"
                 />
               </Form.Group>
 

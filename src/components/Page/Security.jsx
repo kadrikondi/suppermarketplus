@@ -1,33 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Container, Row, Col, Card, Form, Navbar, Nav } from 'react-bootstrap';
-import '../../App.css'; // Import your CSS file
-import Logo from '../../assets/images/suppermarketpluslogosmall.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Button,
+  Container,
+  Row,
+  Col,
+  Card,
+  Form,
+  Navbar,
+  Nav,
+} from "react-bootstrap";
+import "../../App.css"; // Import your CSS file
+import Logo from "../../assets/images/suppermarketpluslogosmall.png";
 
 function Security() {
   const logoStyle = {
-    width: '150px',
+    width: "150px",
   };
 
   return (
     <div>
-      {/* Header */}
-      <Navbar expand="lg" className="bg-light">
-        <Container>
-          <Navbar.Brand as={Link} to="/">
-            <img src={Logo} alt="Logo" style={logoStyle} />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/about">About</Nav.Link>
-              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
       {/* Security Sections */}
       <Container className="mt-5">
         <Card>
@@ -40,19 +32,28 @@ function Security() {
                 <Col md={4}>
                   <Form.Group controlId="currentPassword">
                     <Form.Label>Current Password</Form.Label>
-                    <Form.Control type="password" placeholder="Enter current password" />
+                    <Form.Control
+                      type="password"
+                      placeholder="Enter current password"
+                    />
                   </Form.Group>
                 </Col>
                 <Col md={4}>
                   <Form.Group controlId="newPassword">
                     <Form.Label>New Password</Form.Label>
-                    <Form.Control type="password" placeholder="Enter new password" />
+                    <Form.Control
+                      type="password"
+                      placeholder="Enter new password"
+                    />
                   </Form.Group>
                 </Col>
                 <Col md={4}>
                   <Form.Group controlId="confirmNewPassword">
                     <Form.Label>Confirm New Password</Form.Label>
-                    <Form.Control type="password" placeholder="Confirm new password" />
+                    <Form.Control
+                      type="password"
+                      placeholder="Confirm new password"
+                    />
                   </Form.Group>
                 </Col>
               </Row>
@@ -101,7 +102,10 @@ function Security() {
                 <Col md={6}>
                   <Form.Group controlId="securityQuestion1">
                     <Form.Label>Security Question 1</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your security question" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your security question"
+                    />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
@@ -115,7 +119,10 @@ function Security() {
                 <Col md={6}>
                   <Form.Group controlId="securityQuestion2">
                     <Form.Label>Security Question 2</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your security question" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your security question"
+                    />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
