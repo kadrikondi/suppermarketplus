@@ -9,6 +9,7 @@ import { faGoogle } from "@fortawesome/free-solid-svg-icons";
 import Styled from "./Signin.css";
 import Signup from "./Signup";
 import { Link } from "react-router-dom";
+import Logo from '../../assets/images/logoblacknobg.png'
 
 function SignUp() {
   const [validated, setValidated] = useState(false);
@@ -27,7 +28,11 @@ function SignUp() {
     <>
       <div style={{ marginLeft: "500px", alignItems: "center" }} className="mt-5">
         <div class="wrapper">
-          <div class="title">Sign up</div>
+        <div class="title card-header py-2"> <img src={Logo} alt="" style={{width:'160px'}}/>
+          
+          
+          <h5 className="card-title">Sign-Up</h5></div>
+
           <form >
           <div class="field">
               <input type="text" required></input>
