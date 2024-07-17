@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import Supperfirst from "../../assets/images/marketplace.png";
 import { Link } from "react-router-dom";
 
-function Homestorelist() {
+function Homestorelist({ supermarkets }) {
   return (
     <div>
       {/* CardGroup Section */}
@@ -62,33 +62,56 @@ function Homestorelist() {
           </Card>
         </CardGroup> */}
 
+        {/* {supermarkets.map((supermarket) => (
+          <div key={supermarket._id}>
+            <h3>{supermarket.name}</h3>
+            <p>{supermarket.description}</p>
+          </div>
+        ))} */}
         {/* Row and Col Section */}
         <Row xs={1} md={2} className="g-4 mt-4">
-          {Array.from({ length: 4 }).map((_, idx) => (
-            <Col key={idx}>
-              <Card>
-                <Card.Img variant="top" src={Supperfirst} />
-                <Card.Body>
-                  <Card.Title>BENNYCOOL SupperMarket</Card.Title>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text>
-                </Card.Body>
+          {supermarkets.map((supermarket) => {
+            const {
+              name,
+              building,
+              images,
+              state,
+              description,
+              email,
+              phone,
+              whatsappno,
+              _id,
+            } = supermarket;
+            const filteredImages = images.filter((image) => image !== null);
 
-                <Card.Footer>
-                  {" "}
-                  <div className="text-center">
-                    <Link to="/storedetail">
-                      {" "}
-                      <Button> Visit SupperMart</Button>
-                    </Link>
-                  </div>
-                </Card.Footer>
-              </Card>
-            </Col>
-          ))}
+            // Get the last image URL
+            const lastImage = filteredImages[filteredImages.length - 1];
+
+            return (
+              <Col key={_id}>
+                <Card>
+                  {/* {  supermarket.image.filter(image => image !== null) */}
+
+                  <Card.Img variant="top" src={lastImage} />
+                  <Card.Body>
+                    {/* {console.log(lastImage)} */}
+                    <Card.Title>{name}</Card.Title>
+                    <Card.Text>{description}</Card.Text>
+                  </Card.Body>
+
+                  <Card.Footer>
+                    {" "}
+                    <div className="text-center">
+                      <Link to="/storedetail">
+                        {" "}
+                        <Button> Visit SupperMart</Button>
+                      </Link>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+            );
+          })}
         </Row>
 
         {/* Row and Col Section */}
