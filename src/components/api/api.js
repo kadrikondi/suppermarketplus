@@ -25,7 +25,7 @@ export const fetchSupermarket = async () => {
 
 export const fetchUser = async (id) => {
   try {
-    const response = await axios.get(`https://api.github.com/user/${id}`);
+    const response = await axios.get(`http://localhost:8000/user/${id}`);
     return response.data;
   } catch (error) {
     console.error(`Error fetching user with id ${id}:`, error);

@@ -84,9 +84,12 @@ function Signin() {
   const [errorMessage, setErrorMessage] = useState("");
   const history = useHistory();
 
+  // this is a variable handling something below, the handleEmailChange, which is what i will use to call the function in my main code form function
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
+
+  
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -107,6 +110,7 @@ function Signin() {
         history.push("/home");
       }
     } catch (error) {
+      // this is the  error that will show when the login is incorrect 
       console.error("Signin failed:", error);
       setErrorMessage("Signin failed. Please check your credentials.");
       setTimeout(() => {
@@ -147,7 +151,8 @@ function Signin() {
               />
               <label>Password</label>
             </div>
-
+          {/* this is handling an error pop when they try to sign in and we don't have them as a user to bring an err alert  */}
+          {/* the error alert write up that will show is from our catch (error) above */}
             {errorMessage && (
               <div className="error-message mt-5 alert alert-danger">
                 {errorMessage}

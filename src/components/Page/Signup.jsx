@@ -23,7 +23,8 @@ function SignUp() {
 
   const [confirmpassword, setConfirmPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+  
+  // usehistory is using what we have in our saved history in our database
   const history = useHistory();
 
   const handleUserName = (e) => {
@@ -54,6 +55,7 @@ function SignUp() {
         history.push("/signin");
       }
     } catch (error) {
+      console.log(error)
       if (
         error.response &&
         error.response.data &&
@@ -130,7 +132,7 @@ function SignUp() {
                 value={confirmpassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
               />
-              <label>Password</label>
+              <label> Confirm Password</label>
             </div>
 
             {errorMessage && (
@@ -143,7 +145,7 @@ function SignUp() {
               Suppermartplus <Link to="/Terms"> Terms</Link> &{" "}
               <Link to="/Privacypolicy">Privacy Policy⁠</Link>
             </div>
-
+          {/* this is a loading from boostrap */}
             <div class="field">
               {loading ? (
                 <Button variant="primary" disabled>

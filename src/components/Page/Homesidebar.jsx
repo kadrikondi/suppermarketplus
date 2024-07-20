@@ -6,27 +6,27 @@ function Homesidebar() {
     <>
     <Accordion defaultActiveKey={['0']} alwaysOpen>
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Header>Benefits for supermarkets</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <li> <b>Increased Foot Traffic:</b> By being featured on Supermarkets Plus, supermarkets can attract more customers who are actively seeking recommended and reliable stores.</li>
+        <br />
+      <li> <b>Enhanced Reputation: </b>Positive customer reviews and good publicity can significantly boost a supermarket's reputation, helping to build trust and credibility with potential shoppers.</li>
+      <br />
+    <li> <b>Quality Assurance: </b>The service ensures that only supermarkets meeting certain standards are referred, which helps maintain high-quality experiences for customers and encourages supermarkets to uphold high standards.</li>
+    <br />
+    <li> <b>Effective Marketing:</b> Supermarkets Plus provides trending and promotional opportunities, which can help supermarkets stand out in a competitive market and increase their visibility.</li>
+    <li><b>Customer Insights: </b>Supermarkets can gain valuable feedback and insights from customer reviews, which can help them understand their strengths and areas for improvement.</li>
+    
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header> <b>About Suppermarketplus</b> </Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <ul>
+    <p>Supermarkets Plus simplifies the referral process, making it easier for supermarkets to connect with new customers and manage their online presence effectively.</p>
+    {/* <h4> Supermarkets Plus simplifies the referral process, making it easier for supermarkets to connect with new customers and manage their online presence effectively.</h4> */}
+    {/* <li>Community Engagement: By participating in a platform that emphasizes safety and quality, supermarkets demonstrate their commitment to serving the community, enhancing their overall image and relationship with local customers.</li> */}
+</ul>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
