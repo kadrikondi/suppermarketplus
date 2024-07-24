@@ -126,16 +126,16 @@ function Storedetail() {
           <Col sm={3}>
             <ListGroup>
               <ListGroup.Item action href="#link1">
-              Marketplace#1
+              Wears
               </ListGroup.Item>
               <ListGroup.Item action href="#link2">
-               Marketplace#2
+               Cosmetics
               </ListGroup.Item>
               <ListGroup.Item action href="#link3">
-               Marketplace#3
+              Electronics
               </ListGroup.Item>
               <ListGroup.Item action href="#link4">
-               Marketplace#4
+               Appliances
               </ListGroup.Item>
             </ListGroup>
           </Col>
@@ -189,3 +189,5 @@ function Storedetail() {
 export default Storedetail;
 
 // Afeez
+
+

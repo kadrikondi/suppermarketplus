@@ -20,9 +20,18 @@ import Homemiddleanimation from './Homemiddleanimation';
 import Homeleftbarcustomerrepresentativebox from './Homeleftbarcustomerrepresentativebox';
 import Homesidebarcarousel from './Homesidebarcarousel';
 import Storedetailmiddlebar from './Storedetailmiddlebar'
+import Storedetailcenterbarmodal from '../Storedetail/Storedetailcenterbarmodal'
 
 
 function Storedetail() {
+
+  const modalBodyStyle = {
+    maxWidth: '100%',
+    width: '300px',
+  };
+
+
+
   return (
     <div>
       <Carousel>
@@ -52,9 +61,9 @@ function Storedetail() {
       </Carousel>
       <Col>< Homeplaceholderanimation /></Col>
       <Row>
-      <Col><Homesidebar /><Homesidebar /><Homesidebar /> <Homesidebarcarousel /> <br /> <Homesidebarcarousel/> <Homesidebarrequestform /> </Col>
+      <Col><Homesidebar /> <Homesidebarcarousel /> <br /> <Homesidebarcarousel/> <Homesidebarrequestform /> </Col>
 
-       <Col xs={6}> <Homemiddleanimation /> <Homemiddleanimation /> <Storedetailmiddlebar /> <Homemiddleanimation /> <Homemiddleanimation /> < Homeplaceholderanimation /></Col>
+       <Col xs={6}> <Homemiddleanimation /><Storedetailcenterbarmodal style={modalBodyStyle} /> <Homemiddleanimation /> <Storedetailmiddlebar /> <Homemiddleanimation /> <Homemiddleanimation /> < Homeplaceholderanimation /></Col>
 
     <Col> <Homeleftbar /> <Homeleftbarcustomerrepresentativebox /> </Col>
       </Row>
