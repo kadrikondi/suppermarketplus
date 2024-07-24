@@ -19,6 +19,7 @@ import LandingPage from "./components/layout/Landingpage";
 import Terms from "./components/Page/Terms";
 import Privacypolicy from "./components/Page/Privacypolicy";
 import Faq from "./components/Page/Faq";
+import UploadSupermarketImages from "./components/Page/uploadSupermarket";
 
 export default function Approute() {
   return (
@@ -39,7 +40,7 @@ export default function Approute() {
           <FAQ />
         </Route> */}
 
-        <Route exact path="/profile">
+        <Route exact path="/profile/:userId">
           <Profile />
         </Route>
 
@@ -63,8 +64,11 @@ export default function Approute() {
           <Contact />
         </Route>
 
-        <Route exact path="/storedetail">
+        <Route exact path="/storedetail/:id">
           <Storedetail />
+        </Route>
+        <Route exact path="/upload-supermarket-images/:storeId/">
+          <UploadSupermarketImages />
         </Route>
 
         <Route exact path="/signin">

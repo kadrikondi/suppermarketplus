@@ -1,185 +1,197 @@
-import React from "react";
-import {
-  Button,
-  Container,
-  Row,
-  Col,
-  Card,
-  Form,
-  Image,
-} from "react-bootstrap";
-import "../../App.css"; // Import your CSS file
-import ProfilePic from "../../assets/images/Best-Online-Marketplaces.jpg"; // Example profile picture
-import  Profilemodelpopup from "../Page/Profilemodelpopup"
+// // import React, { useEffect, useState } from "react";
+// // import { useParams } from "react-router-dom";
+// // import {
+// //   Button,
+// //   Container,
+// //   Row,
+// //   Col,
+// //   Card,
+// //   Form,
+// //   Image,
+// // } from "react-bootstrap";
+// // import "../../App.css"; // Import your CSS file
+// // import ProfilePic from "../../assets/images/Best-Online-Marketplaces.jpg"; // Example profile picture
+// // import Profilemodelpopup from "../Page/Profilemodelpopup";
+// // import { fetchUser } from "../api/api";
 
-function Profile() {
-  const profilePicStyle = {
-    width: "150px",
-    height: "150px",
-  };
+// // function Profile() {
+// //   const { userId } = useParams();
+// //   const [user, setUser] = useState("");
 
-  return (
-    <div>
-      {/* Profile Sections */}
-      <Container className="mt-5">
-        <Card>
-          <Card.Header>Profile</Card.Header>
-          <Card.Body>
-            {/* Profile Header */}
-            <div className="text-center mb-4">
-              <Image src={ProfilePic} roundedCircle style={profilePicStyle} />
-              <h2 className="mt-3">John Doe</h2>
-              <p className="text-muted">Web Developer</p>
-            </div>
+// //   useEffect(() => {
+// //     const getUser = async () => {
+// //       console.log(userId + "sdsadasdadasdas");
+// //       try {
+// //         const userData = await fetchUser(userId);
+// //         setUser(userData);
+// //         console.log(userData);
+// //       } catch (error) {
+// //         console.error("Error fetching user data:", error);
+// //       }
+// //     };
 
-            {/* Personal Information */}
-            <h5>Personal Information</h5>
-            <Form>
-              <Row>
-                <Col md={6}>
-                  <Form.Group controlId="profileName">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="John Doe" disabled />
-                  </Form.Group>
-                </Col>
-                <Col md={6}>
-                  <Form.Group controlId="profileEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control
-                      type="email"
-                      placeholder="john.doe@example.com"
-                      disabled
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-              <Row className="mt-3">
-                <Col md={6}>
-                  <Form.Group controlId="profilePhone">
-                    <Form.Label>Phone</Form.Label>
-                    <Form.Control
-                      type="text"
-                      placeholder="(123) 456-7890"
-                      disabled
-                    />
-                  </Form.Group>
-                </Col>
-                <Col md={6}>
-                  <Form.Group controlId="profileAddress">
-                    <Form.Label>Address</Form.Label>
-                    <Form.Control
-                      type="text"
-                      placeholder="123 Main St, City, Country"
-                      disabled
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-              
-            </Form>
+// //     getUser();
+// //   }, [userId]);
 
-            {/* Account Information */}
-            <h5 className="mt-4">Account Information</h5>
-            <Row>
-              <Col md={6}>
-                <Form.Group controlId="accountUsername">
-                  <Form.Label>Username</Form.Label>
-                  <Form.Control type="text" placeholder="johndoe" disabled />
-                </Form.Group>
-              </Col>
-              <Col md={6}>
-                <Form.Group controlId="accountDateJoined">
-                  <Form.Label>Date Joined</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="January 1, 2020"
-                    disabled
-                  />
-                </Form.Group>
-              </Col>
-              <Row className="mt-3">
-                <Col md={6}>
-                  <Form.Group controlId="profileGender">
-                    <Form.Label>Gender</Form.Label>
-                    <Form.Control as="select" disabled>
-                      <option>Select</option>
-                      <option>Male</option>
-                      <option>Female</option>
-                      <option>Others</option>
-                    </Form.Control>
-                  </Form.Group>
-                </Col>
-              </Row>
-              {/* Centered Edit Button */}
-              <div className="text-center mt-3">
-              < Profilemodelpopup/>
-              </div>
-            </Row>
-            
+// //   const profilePicStyle = {
+// //     width: "150px",
+// //     height: "150px",
+// //   };
 
-            {/* Activity Feed */}
-            <h5 className="mt-4">Activity Feed</h5>
-            <Card className="mt-3">
-              <Card.Body>
-                <Card.Text>
-                  Suppermarketplus Userprofile
-                </Card.Text>
-                <Card.Text>Update profile </Card.Text>
-                {/* <Card.Text>Updated profile picture</Card.Text> */}
-              </Card.Body>
-            </Card>
-          </Card.Body>
-        </Card>
-      </Container>
-    </div>
-  );
-}
+// //   if (!user) {
+// //     return <div>Loading...</div>;
+// //   }
 
-export default Profile;
+// //   return (
+// //     <div>
+// //       {/* Profile Sections */}
+// //       <Container className="mt-5">
+// //         <Card>
+// //           <Card.Header>Profile {user.username}</Card.Header>
 
-// add the model below to the above code edit pop 
+// //           <Card.Body>
+// //             {/* Profile Header */}
+// //             <div className="text-center mb-4">
+// //               <Image src={user.pic} roundedCircle style={profilePicStyle} />
+// //               <h2 className="mt-3">{user.username}</h2>
+// //               <p className="text-muted">{user.bio}</p>
+// //             </div>
 
+// //             {/* Personal Information */}
+// //             <h5>Personal Information</h5>
+// //             <Form>
+// //               <Row>
+// //                 <Col md={6}>
+// //                   <Form.Group controlId="profileName">
+// //                     <Form.Label>Name</Form.Label>
+// //                     <Form.Control type="text" value={user.username} disabled />
+// //                   </Form.Group>
+// //                 </Col>
+// //                 <Col md={6}>
+// //                   <Form.Group controlId="profileEmail">
+// //                     <Form.Label>Email</Form.Label>
+// //                     <Form.Control type="email" value={user.email} disabled />
+// //                   </Form.Group>
+// //                 </Col>
+// //               </Row>
+// //               <Row className="mt-3">
+// //                 <Col md={6}>
+// //                   <Form.Group controlId="profilePhone">
+// //                     <Form.Label>Phone</Form.Label>
+// //                     <Form.Control type="text" value={user.phone} disabled />
+// //                   </Form.Group>
+// //                 </Col>
+// //                 <Col md={6}>
+// //                   <Form.Group controlId="profileAddress">
+// //                     <Form.Label>Address</Form.Label>
+// //                     <Form.Control type="text" value={user.address} disabled />
+// //                   </Form.Group>
+// //                 </Col>
+// //               </Row>
+// //             </Form>
 
+// //             {/* Account Information */}
+// //             <h5 className="mt-4">Account Information</h5>
+// //             <Row>
+// //               <Col md={6}>
+// //                 <Form.Group controlId="accountUsername">
+// //                   <Form.Label>Username</Form.Label>
+// //                   <Form.Control type="text" value={user.username} disabled />
+// //                 </Form.Group>
+// //               </Col>
+// //               <Col md={6}>
+// //                 <Form.Group controlId="accountDateJoined">
+// //                   <Form.Label>Date Joined</Form.Label>
+// //                   <Form.Control type="text" value={user.dateJoined} disabled />
+// //                 </Form.Group>
+// //               </Col>
+// //               <Row className="mt-3">
+// //                 <Col md={6}>
+// //                   <Form.Group controlId="profileGender">
+// //                     <Form.Label>Gender</Form.Label>
+// //                     <Form.Control as="select" value={user.gender} disabled>
+// //                       <option>Select</option>
+// //                       <option>Male</option>
+// //                       <option>Female</option>
+// //                       <option>Others</option>
+// //                     </Form.Control>
+// //                   </Form.Group>
+// //                 </Col>
+// //               </Row>
+// //               {/* Centered Edit Button */}
+// //               <div className="text-center mt-3">
+// //                 <Profilemodelpopup />
+// //               </div>
+// //             </Row>
 
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import {
-//   Button,
-//   Container,
-//   Row,
-//   Col,
-//   Card,
-//   Form,
-//   Navbar,
-//   Nav,
-//   Image,
-// } from "react-bootstrap";
+// //             {/* Activity Feed */}
+// //             <h5 className="mt-4">Activity Feed</h5>
+// //             <Card className="mt-3">
+// //               <Card.Body>
+// //                 <Card.Text>{user.activityFeed}</Card.Text>
+// //               </Card.Body>
+// //             </Card>
+// //           </Card.Body>
+// //         </Card>
+// //       </Container>
+// //     </div>
+// //   );
+// // }
+
+// // export default Profile;
+
+// import React, { useEffect, useState } from "react";
+// import { useParams } from "react-router-dom";
+// import { Container, Row, Col, Card, Form, Image } from "react-bootstrap";
 // import "../../App.css"; // Import your CSS file
-// import Logo from "../../assets/images/logomain.png";
 // import ProfilePic from "../../assets/images/Best-Online-Marketplaces.jpg"; // Example profile picture
+// import Profilemodelpopup from "../Page/Profilemodelpopup";
+// import { fetchUser } from "../api/api";
 
 // function Profile() {
-//   const logoStyle = {
-//     width: "150px",
-//   };
+//   const { userId } = useParams();
+//   const [user, setUser] = useState(null);
+
+//   useEffect(() => {
+//     const getUser = async () => {
+//       try {
+//         const userData = await fetchUser(userId);
+//         setUser(userData);
+//         console.log(userData);
+//       } catch (error) {
+//         console.error("Error fetching user data:", error);
+//       }
+//     };
+
+//     getUser();
+//   }, [userId]);
 
 //   const profilePicStyle = {
 //     width: "150px",
 //     height: "150px",
 //   };
 
+//   if (!user) {
+//     return <div>Loading...</div>;
+//   }
+
 //   return (
 //     <div>
 //       {/* Profile Sections */}
 //       <Container className="mt-5">
 //         <Card>
-//           <Card.Header>Profile</Card.Header>
+//           <Card.Header>Profile {user.username}</Card.Header>
+
 //           <Card.Body>
 //             {/* Profile Header */}
 //             <div className="text-center mb-4">
-//               <Image src={ProfilePic} roundedCircle style={profilePicStyle} />
-//               <h2 className="mt-3">John Doe</h2>
-//               <p className="text-muted">Web Developer</p>
+//               <Image
+//                 src={user.pic || ProfilePic}
+//                 roundedCircle
+//                 style={profilePicStyle}
+//               />
+//               <h2 className="mt-3">{user.username}</h2>
+//               <p className="text-muted">{user.bio}</p>
 //             </div>
 
 //             {/* Personal Information */}
@@ -189,17 +201,13 @@ export default Profile;
 //                 <Col md={6}>
 //                   <Form.Group controlId="profileName">
 //                     <Form.Label>Name</Form.Label>
-//                     <Form.Control type="text" placeholder="John Doe" disabled />
+//                     <Form.Control type="text" value={user.username} />
 //                   </Form.Group>
 //                 </Col>
 //                 <Col md={6}>
 //                   <Form.Group controlId="profileEmail">
 //                     <Form.Label>Email</Form.Label>
-//                     <Form.Control
-//                       type="email"
-//                       placeholder="john.doe@example.com"
-//                       disabled
-//                     />
+//                     <Form.Control type="email" value={user.email} disabled />
 //                   </Form.Group>
 //                 </Col>
 //               </Row>
@@ -207,21 +215,13 @@ export default Profile;
 //                 <Col md={6}>
 //                   <Form.Group controlId="profilePhone">
 //                     <Form.Label>Phone</Form.Label>
-//                     <Form.Control
-//                       type="text"
-//                       placeholder="(123) 456-7890"
-//                       disabled
-//                     />
+//                     <Form.Control type="text" value={user.phone} disabled />
 //                   </Form.Group>
 //                 </Col>
 //                 <Col md={6}>
 //                   <Form.Group controlId="profileAddress">
 //                     <Form.Label>Address</Form.Label>
-//                     <Form.Control
-//                       type="text"
-//                       placeholder="123 Main St, City, Country"
-//                       disabled
-//                     />
+//                     <Form.Control type="text" value={user.address} disabled />
 //                   </Form.Group>
 //                 </Col>
 //               </Row>
@@ -233,30 +233,39 @@ export default Profile;
 //               <Col md={6}>
 //                 <Form.Group controlId="accountUsername">
 //                   <Form.Label>Username</Form.Label>
-//                   <Form.Control type="text" placeholder="johndoe" disabled />
+//                   <Form.Control type="text" value={user.username} disabled />
 //                 </Form.Group>
 //               </Col>
 //               <Col md={6}>
 //                 <Form.Group controlId="accountDateJoined">
 //                   <Form.Label>Date Joined</Form.Label>
-//                   <Form.Control
-//                     type="text"
-//                     placeholder="January 1, 2020"
-//                     disabled
-//                   />
+//                   <Form.Control type="text" value={user.dateJoined} disabled />
 //                 </Form.Group>
 //               </Col>
+//               <Row className="mt-3">
+//                 <Col md={6}>
+//                   <Form.Group controlId="profileGender">
+//                     <Form.Label>Gender</Form.Label>
+//                     <Form.Control as="select" value={user.gender} disabled>
+//                       <option>Select</option>
+//                       <option>Male</option>
+//                       <option>Female</option>
+//                       <option>Others</option>
+//                     </Form.Control>
+//                   </Form.Group>
+//                 </Col>
+//               </Row>
+//               {/* Centered Edit Button */}
+//               <div className="text-center mt-3">
+//                 <Profilemodelpopup />
+//               </div>
 //             </Row>
 
 //             {/* Activity Feed */}
 //             <h5 className="mt-4">Activity Feed</h5>
 //             <Card className="mt-3">
 //               <Card.Body>
-//                 <Card.Text>
-//                   Posted a new blog article: "Understanding React Hooks"
-//                 </Card.Text>
-//                 <Card.Text>Joined the group "React Developers"</Card.Text>
-//                 <Card.Text>Updated profile picture</Card.Text>
+//                 <Card.Text>{user.activityFeed}</Card.Text>
 //               </Card.Body>
 //             </Card>
 //           </Card.Body>
@@ -267,4 +276,142 @@ export default Profile;
 // }
 
 // export default Profile;
-// // afeez
+
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Container, Row, Col, Card, Form, Image } from "react-bootstrap";
+import "../../App.css"; // Import your CSS file
+import ProfilePic from "../../assets/images/Best-Online-Marketplaces.jpg"; // Example profile picture
+import Profilemodelpopup from "../Page/Profilemodelpopup";
+import { fetchUser } from "../api/api";
+
+function Profile() {
+  const { userId } = useParams();
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const getUser = async () => {
+      try {
+        console.log("Fetching user with ID:", userId);
+        const userData = await fetchUser(userId);
+        console.log("User data fetched:", userData.user.username);
+        setUser(userData.user);
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      }
+    };
+
+    getUser();
+  }, [userId]);
+
+  const profilePicStyle = {
+    width: "150px",
+    height: "150px",
+  };
+
+  if (!user) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div>
+      {user.username + "gooodoodoododoo"}
+      {/* Profile Sections */}
+      <Container className="mt-5">
+        <Card>
+          <Card.Header>Profile {user.username}</Card.Header>
+
+          <Card.Body>
+            {/* Profile Header */}
+            <div className="text-center mb-4">
+              <Image
+                src={user.pic || ProfilePic}
+                roundedCircle
+                style={profilePicStyle}
+              />
+              <h2 className="mt-3">{user.username}</h2>
+              <p className="text-muted">{user.bio}</p>
+            </div>
+
+            {/* Personal Information */}
+            <h5>Personal Information</h5>
+            <Form>
+              <Row>
+                <Col md={6}>
+                  <Form.Group controlId="profileName">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control type="text" value={user.username} disabled />
+                  </Form.Group>
+                </Col>
+                <Col md={6}>
+                  <Form.Group controlId="profileEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" value={user.email} disabled />
+                  </Form.Group>
+                </Col>
+              </Row>
+              <Row className="mt-3">
+                <Col md={6}>
+                  <Form.Group controlId="profilePhone">
+                    <Form.Label>Phone</Form.Label>
+                    <Form.Control type="text" value={user.phone} disabled />
+                  </Form.Group>
+                </Col>
+                <Col md={6}>
+                  <Form.Group controlId="profileAddress">
+                    <Form.Label>Address</Form.Label>
+                    <Form.Control type="text" value={user.address} disabled />
+                  </Form.Group>
+                </Col>
+              </Row>
+            </Form>
+
+            {/* Account Information */}
+            <h5 className="mt-4">Account Information</h5>
+            <Row>
+              <Col md={6}>
+                <Form.Group controlId="accountUsername">
+                  <Form.Label>Username</Form.Label>
+                  <Form.Control type="text" value={user.username} disabled />
+                </Form.Group>
+              </Col>
+              <Col md={6}>
+                <Form.Group controlId="accountDateJoined">
+                  <Form.Label>Date Joined</Form.Label>
+                  <Form.Control type="text" value={user.dateJoined} disabled />
+                </Form.Group>
+              </Col>
+              <Row className="mt-3">
+                <Col md={6}>
+                  <Form.Group controlId="profileGender">
+                    <Form.Label>Gender</Form.Label>
+                    <Form.Control as="select" value={user.gender} disabled>
+                      <option>Select</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Others</option>
+                    </Form.Control>
+                  </Form.Group>
+                </Col>
+              </Row>
+              {/* Centered Edit Button */}
+              <div className="text-center mt-3">
+                <Profilemodelpopup userprofile={user} />
+              </div>
+            </Row>
+
+            {/* Activity Feed */}
+            <h5 className="mt-4">Activity Feed</h5>
+            <Card className="mt-3">
+              <Card.Body>
+                <Card.Text>{user.activityFeed}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Card.Body>
+        </Card>
+      </Container>
+    </div>
+  );
+}
+
+export default Profile;

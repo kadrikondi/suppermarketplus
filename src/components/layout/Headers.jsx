@@ -4,12 +4,12 @@ import { useLocation } from "react-router-dom";
 import Userpageheader from "./Userpageheader";
 
 export default function Headers() {
-  const [id, setId] = useState(localStorage.getItem("userid"));
+  const [id, setId] = useState(localStorage.getItem("userId"));
   const location = useLocation();
 
   useEffect(() => {
     const updateId = () => {
-      setId(localStorage.getItem("userid"));
+      setId(localStorage.getItem("userId"));
     };
 
     // Call updateId function when the component mounts
@@ -26,7 +26,7 @@ export default function Headers() {
 
   useEffect(() => {
     // Update id state when the location changes
-    setId(localStorage.getItem("userid"));
+    setId(localStorage.getItem("userId"));
   }, [location]);
 
   return <div>{id ? <Userpageheader /> : <Header />}</div>;

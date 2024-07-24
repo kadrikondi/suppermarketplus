@@ -62,7 +62,7 @@ function Header() {
               to="/Storedetail"
               title={
                 <span style={linkStyle}>
-                  <Link to="/Storedetail">Storedetail</Link>
+                  <Link to="#">Storedetail</Link>
                 </span>
               }
               id="navbarScrollingDropdown"
@@ -103,7 +103,10 @@ function Header() {
                 </Col>
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/profile">
+                <Dropdown.Item
+                  as={Link}
+                  to={`/profile/${localStorage.getItem("userId")}`}
+                >
                   Profile
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} to="/settings">
@@ -114,9 +117,9 @@ function Header() {
                 </Dropdown.Item>
                 <Dropdown.Item
                   as={Link}
-                  to="/"
+                  to="/signin"
                   onClick={() => {
-                    localStorage.removeItem("userid");
+                    localStorage.clear();
                   }}
                 >
                   logout

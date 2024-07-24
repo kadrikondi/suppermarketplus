@@ -181,9 +181,19 @@ function LandingPage() {
           <Row>
             <Col>
               <h2>Ready to Get Started?</h2>
-              <Button variant="primary" size="lg" as={Link} to="/signup">
-                Join Now
-              </Button>
+              {localStorage.getItem("userId") ? (
+                <Button variant="primary" size="lg" as={Link} to="/home">
+                  Exploare
+                </Button>
+              ) : (
+                <>
+                  {" "}
+                  <p>Sign up for an account now!</p>
+                  <Button variant="primary" size="lg" as={Link} to="/signup">
+                    Join Now
+                  </Button>
+                </>
+              )}
             </Col>
           </Row>
         </Container>

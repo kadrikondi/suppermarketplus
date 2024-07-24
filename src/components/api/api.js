@@ -13,7 +13,7 @@ export const fetchUsers = async () => {
   }
 };
 
-export const fetchSupermarket = async () => {
+export const fetchAllSupermarket = async () => {
   try {
     const response = await axios.get(`${supermarketapi}/allsuppermarket`);
     return response.data;
@@ -33,9 +33,9 @@ export const fetchUser = async (id) => {
   }
 };
 
-export const fetchSinglePost = async (id) => {
+export const fetchSingleSupermarket = async (id) => {
   try {
-    const response = await axios.get(`${supermarketapi}/${id}`);
+    const response = await axios.get(`${supermarketapi}/suppermarket/${id}`);
     console.log(response.data);
     return response.data;
   } catch (error) {

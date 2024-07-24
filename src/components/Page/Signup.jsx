@@ -23,7 +23,7 @@ function SignUp() {
 
   const [confirmpassword, setConfirmPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  
+
   // usehistory is using what we have in our saved history in our database
   const history = useHistory();
 
@@ -54,14 +54,17 @@ function SignUp() {
       if (response.status === 200) {
         history.push("/signin");
       }
+      console.log(response.data);
     } catch (error) {
-      console.log(error)
+      console.log(error);
       if (
         error.response &&
         error.response.data &&
         error.response.data.message
       ) {
         setErrorMessage(error.response.data.message);
+        console.log(error.response.data.message);
+        console.log(error.response.data);
         setLoading(false);
       } else {
         setErrorMessage("Signup failed");
@@ -145,7 +148,7 @@ function SignUp() {
               Suppermartplus <Link to="/Terms"> Terms</Link> &{" "}
               <Link to="/Privacypolicy">Privacy Policy⁠</Link>
             </div>
-          {/* this is a loading from boostrap */}
+            {/* this is a loading from boostrap */}
             <div class="field">
               {loading ? (
                 <Button variant="primary" disabled>

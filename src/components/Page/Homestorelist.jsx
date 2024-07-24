@@ -9,13 +9,14 @@ import Supperfirst from "../../assets/images/marketplace.png";
 import { Link } from "react-router-dom";
 
 function Homestorelist({ supermarkets }) {
+  const user = localStorage.getItem("user");
   return (
     <div>
       {/* CardGroup Section */}
       <ListGroup as="ul">
         <ListGroup.Item as="li" active>
           <marquee behavior="" direction="alternative">
-            Supermarketplus
+            WELCOME {user.toUpperCase()}
           </marquee>
         </ListGroup.Item>
         {/* <CardGroup>
@@ -96,13 +97,13 @@ function Homestorelist({ supermarkets }) {
                   <Card.Body>
                     {/* {console.log(lastImage)} */}
                     <Card.Title>{name}</Card.Title>
-                    <Card.Text>{description}</Card.Text>
+                    <Card.Text>{description?.substring(0, 50)}</Card.Text>
                   </Card.Body>
 
                   <Card.Footer>
                     {" "}
                     <div className="text-center">
-                      <Link to="/storedetail">
+                      <Link to={`/storedetail/${_id}`}>
                         {" "}
                         <Button> Visit SupperMart</Button>
                       </Link>
@@ -115,7 +116,7 @@ function Homestorelist({ supermarkets }) {
         </Row>
 
         {/* Row and Col Section */}
-        <Row xs={1} md={2} className="g-4 mt-4">
+        {/* <Row xs={1} md={2} className="g-4 mt-4">
           {Array.from({ length: 4 }).map((_, idx) => (
             <Col key={idx}>
               <Card>
@@ -131,9 +132,9 @@ function Homestorelist({ supermarkets }) {
               </Card>
             </Col>
           ))}
-        </Row>
+        </Row> */}
 
-        <CardGroup className="mt-5">
+        {/* <CardGroup className="mt-5">
           <Card>
             <Card.Img variant="top" src={Supperfirst} />
             <Card.Body>
@@ -175,7 +176,7 @@ function Homestorelist({ supermarkets }) {
               <small className="text-muted">Last updated 3 mins ago</small>
             </Card.Footer>
           </Card>
-        </CardGroup>
+        </CardGroup> */}
 
         {/* Bootstrap Button */}
         {/* <Button variant="primary">Click me</Button> */}
